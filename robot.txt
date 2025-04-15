@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /activateSubscription
+Disallow: /patientEdit
+Disallow: /patientRecord
+Disallow: /printing
+Disallow: /searchDatabase
+Disallow: /onboarding
+Disallow: /profileComplete
+
+Allow: /signUp
+Allow: /signIn
+Allow: /payWallforNewUser
+Allow: /payWall
+Allow: /payWallEdu
+Allow: /cerebroEduSupervisorConsent
+Allow: /privacySecurity
+Allow: /cerebroEduStudentConsent
+Sitemap: https://cerebrolog.com.tr/sitemap.xml
