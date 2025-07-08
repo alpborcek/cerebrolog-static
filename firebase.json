@@ -5,97 +5,54 @@
     "headers": [
       {
         "source": "/index.html",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache"
-          }
-        ]
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
       },
       {
         "source": "/main.dart.js",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache"
-          }
-        ]
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
       },
       {
         "source": "/flutter.js",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache"
-          }
-        ]
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
       },
       {
         "source": "/assets/**",
+        "headers": [{ "key": "Cache-Control", "value": "max-age=31536000" }]
+      },
+      {
+        "source": "/*.webp",
         "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=31536000"
-          }
+          { "key": "Content-Type", "value": "image/webp" },
+          { "key": "Cache-Control", "value": "max-age=31536000" }
+        ]
+      },
+      {
+        "source": "/pad.xml",
+        "headers": [
+          { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+          { "key": "Cache-Control", "value": "no-cache" }
         ]
       }
     ],
     "rewrites": [
-      {
-        "source": "/payWallforNewUser",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/payWall",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/payWallEdu",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/privacySecurity",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/sitemap.xml",
-        "destination": "/sitemap.xml"
-      },
-      {
-        "source": "/robots.txt",
-        "destination": "/robots.txt"
-      },
-      {
-        "source": "/signUp",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/signIn",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/payment-fail",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/payment-success",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/cerebroEduStudentConsent",
-        "destination": "/index.html"
-      },
+      { "source": "/pad.xml", "destination": "/pad.xml" },
+      { "source": "/payWallforNewUser", "destination": "/index.html" },
+      { "source": "/payWall", "destination": "/index.html" },
+      { "source": "/payWallEdu", "destination": "/index.html" },
+      { "source": "/privacySecurity", "destination": "/index.html" },
+      { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+      { "source": "/robots.txt", "destination": "/robots.txt" },
+      { "source": "/signUp", "destination": "/index.html" },
+      { "source": "/signIn", "destination": "/index.html" },
+      { "source": "/payment-fail", "destination": "/index.html" },
+      { "source": "/payment-success", "destination": "/index.html" },
+      { "source": "/cerebroEduStudentConsent", "destination": "/index.html" },
       {
         "source": "/cerebroEduSupervisorConsent",
         "destination": "/index.html"
       },
-      {
-        "source": "/**",
-        "destination": "/index.html"
-      }
+      { "source": "/**", "destination": "/index.html" }
     ],
-    "frameworksBackend": {
-      "region": "us-central1"
-    }
+    "frameworksBackend": { "region": "us-central1" }
   }
 }
