@@ -54,6 +54,7 @@
       { "source": "/payment-success", "destination": "/index.html" },
       { "source": "/cerebroEduStudentConsent", "destination": "/index.html" },
       { "source": "/cerebroEduSupervisorConsent", "destination": "/index.html" },
+      { "source": "/activatePromotion", "destination": "/index.html" },
       { "source": "/icons/**", "destination": "/icons/**" },
       { "source": "/**", "destination": "/index.html" }
     ],
